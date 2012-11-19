@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  <![endif]-->
+  <!--[if IE 7]>
+  <html class="no-js lt-ie9 lt-ie8" lang="en">
+    <![endif]-->
+    <!--[if IE 8]>
+    <html class="no-js lt-ie9" lang="en">
+      <![endif]-->
+      <!--[if gt IE 8]>
+      <!-->
+      <html lang="en">
+        <!--<![endif]-->
+<head>
+        <meta charset="utf-8" />
+
+        <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Responsive Tables by ZURB - inpixel Remix</title>
+
+        <!-- Included CSS Files -->
+
+        <link rel="stylesheet" href="stylesheets/globals.css">
+        <link rel="stylesheet" href="stylesheets/typography.css">
+        <link rel="stylesheet" href="stylesheets/grid.css">
+
+        <link rel="stylesheet" href="stylesheets/app.css">
+        <link rel="stylesheet" href="responsive-tables.css">
+        <style>
+        .container {
+          width:auto;
+          max-width:none;
+          margin:0 auto;
+        }
+        .row{
+         max-width:1280px;
+          margin:0 auto;
+
+        }
+        .scrollable{
+          /*border:1px solid green;*/
+        }
+        </style>
+
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="responsive-tables.js"></script>
+
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="stylesheets/ie.css">
+        <![endif]-->
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+        <!-- container -->
+        <div class="container">
+
+          <div class="row">
+           
+              <h1>Responsive Tables testing</h1>
+              <h4 class="subhead">Adapting Zurb's responsive tables a little bit</h4>
+
+              <p>
+                Testing some slidebar  with code remix and the slidebar under the actual pinned div
+              </p>
+
+              <h5>Small Word Table</h5>
+              <div class="tab-content ">
+                <table class="responsive">
+                  <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                    <th>Header 6</th>
+                    <th>Header 7</th>
+                    <th>Header 8</th>
+                    <th>Header 9</th>
+                    <th>Header 10</th>
+                    <th>Header 11</th>
+                    <th>Header 12</th>
+                    <th>Header 13</th>
+                    <th>Header 14</th>
+                    <th>Header 15</th>
+                  </tr>
+                  <tr>
+                    <td>row 1, cell</td>
+                    <td>row 1, cell 2</td>
+                    <td>row 1, cell 3</td>
+                    <td>row 1, cell 4</td>
+                    <td>row 1, cell 5</td>
+                    <td>row 1, cell 6</td>
+                    <td>row 1, cell 7</td>
+                    <td>row 1, cell 8</td>
+                    <td>row 1, cell 9</td>
+                    <td>row 1, cell 10</td>
+                    <td>row 1, cell 11</td>
+                    <td>row 1, cell 12</td>
+                    <td>row 1, cell 13</td>
+                    <td>row 1, cell 14</td>
+                    <td>row 1, cell 15</td>
+                  </tr>
+                  <tr>
+                    <td>row 2, cell 1</td>
+                    <td>row 2, cell 2</td>
+                    <td>row 2, cell 3</td>
+                    <td>row 2, cell 4</td>
+                    <td>row 2, cell 5</td>
+                    <td>row 2, cell 6</td>
+                    <td>row 2, cell 7</td>
+                    <td>row 2, cell 8</td>
+                    <td>row 1, cell 9</td>
+                    <td>row 1, cell 10</td>
+                    <td>row 1, cell 11</td>
+                    <td>row 1, cell 12</td>
+                    <td>row 1, cell 13</td>
+                    <td>row 1, cell 14</td>
+                    <td>row 1, cell 15</td>
+                  </tr>
+                  <tr>
+                    <td>row 3, cell 1</td>
+                    <td>row 3, cell 2</td>
+                    <td>row 3, cell 3</td>
+                    <td>row 3, cell 4</td>
+                    <td>row 3, cell 5</td>
+                    <td>row 3, cell 6</td>
+                    <td>row 3, cell 7</td>
+                    <td>row 3, cell 8</td>
+                    <td>row 1, cell 9</td>
+                    <td>row 1, cell 10</td>
+                    <td>row 1, cell 11</td>
+                    <td>row 1, cell 12</td>
+                    <td>row 1, cell 13</td>
+                    <td>row 1, cell 14</td>
+                    <td>row 1, cell 15</td>
+                  </tr>
+                  <tr>
+                    <td>row 4, cell 1</td>
+                    <td>row 4, cell 2</td>
+                    <td>row 4, cell 3</td>
+                    <td>row 4, cell 4</td>
+                    <td>row 4, cell 5</td>
+                    <td>row 4, cell 6</td>
+                    <td>row 4, cell 7</td>
+                    <td>row 4, cell 8</td>
+                    <td>row 1, cell 9</td>
+                    <td>row 1, cell 10</td>
+                    <td>row 1, cell 11</td>
+                    <td>row 1, cell 12</td>
+                    <td>row 1, cell 13</td>
+                    <td>row 1, cell 14</td>
+                    <td>row 1, cell 15</td>
+                  </tr>
+
+                </table>
+              </div>
+
+
+
+              <h5>Larger Content Table</h5>
+              <div class="tab-content ">
+                  <table class="responsive">
+          <tbody>
+            <tr>
+              <th>Perk</th>
+              <th>Description</th>
+              <th>ID</th>
+              <th>Skill Req</th>
+              <th>Perk Req</th>
+            </tr>
+            <tr>
+              <td>Steel Smithing</td>
+              <td>Can create Steel armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb40d</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Arcane Blacksmith</td>
+              <td>You can improve magical weapons and armor.</td>
+              <td><span class="idref" style="font-size: x-small">0005218e</span></td>
+              <td>60 Smithing</td>
+              <td>Steel Smithing</td>
+            </tr>
+            <tr>
+              <td>Dwarven Smithing</td>
+              <td>Can create Dwarven armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb40e</td>
+              <td>30 Smithing</td>
+              <td>Steel Smithing</td>
+            </tr>
+            <tr>
+              <td>Orcish Smithing</td>
+              <td>Can create Orcish armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb410</td>
+              <td>50 Smithing</td>
+              <td>Dwarven Smithing</td>
+            </tr>
+            <tr>
+              <td>Ebony Smithing</td>
+              <td>Can create Ebony armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb412</td>
+              <td>80 Smithing</td>
+              <td>Orcish Smithing</td>
+            </tr>
+            <tr>
+              <td>Daedric Smithing</td>
+              <td>Can create Daedric armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb413</td>
+              <td>90 Smithing</td>
+              <td>Ebony Smithing</td>
+            </tr>
+            <tr>
+              <td>Elven Smithing</td>
+              <td>Can create Elven armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb40f</td>
+              <td>30 Smithing</td>
+              <td>Steel Smithing</td>
+            </tr>
+            <tr>
+              <td>Advanced Armors</td>
+              <td>Can create Scaled and Plate armor at forges, and improve them twice as much.
+              </td><td>000cb414</td>
+              <td>50 Smithing</td>
+              <td>Elven Smithing</td>
+            </tr>
+            <tr>
+              <td>Glass Smithing</td>
+              <td>Can create Glass armor and weapons at forges, and improve them twice as much.</td>
+              <td>000cb411</td>
+              <td>70 Smithing</td>
+              <td>Advanced Armors</td>
+            </tr>
+            <tr>
+              <td>Dragon Armor</td>
+              <td>Can create Dragon armor at forges, and improve them twice as much.</td>
+              <td>00052190</td>
+              <td>100 Smithing</td>
+              <td>Daedric Smithing or Glass Smithing</td>
+            </tr>
+          </tbody>
+        </table>
+
+                </div>
+
+          </div>
+
+        
+
+        <!--  <div class="main">
+              <div class="tab-pane" id="bank">
+
+                <table class="responsive table table-striped">
+
+                  <tbody>
+                    <tr>
+                      <th>Header 1</th>
+                      <th>Header 2</th>
+                      <th>Header 3</th>
+                      <th>Header 4</th>
+                      <th>Header 5</th>
+                      <th>Header 6</th>
+                      <th>Header 7</th>
+                      <th>Header 8</th>
+                      <th>Header 9</th>
+                      <th>Header 10</th>
+                      <th>Header 11</th>
+                      <th>Header 12</th>
+                    </tr>
+                    <tr>
+                      <td>row 1, cell 1</td>
+                      <td>row 1, cell 2</td>
+                      <td>row 1, cell 3</td>
+                      <td>row 1, cell 4</td>
+                      <td>row 1, cell 5</td>
+                      <td>row 1, cell 6</td>
+                      <td>row 1, cell 7</td>
+                      <td>row 1, cell 8</td>
+                      <td>row 1, cell 9</td>
+                      <td>row 1, cell 10</td>
+                      <td>row 1, cell 11</td>
+                      <td>row 1, cell 12</td>
+                    </tr>
+                    <tr>
+                      <td>row 2, cell 1</td>
+                      <td>row 2, cell 2</td>
+                      <td>row 2, cell 3</td>
+                      <td>row 2, cell 4</td>
+                      <td>row 2, cell 5</td>
+                      <td>row 2, cell 6</td>
+                      <td>row 2, cell 7</td>
+                      <td>row 2, cell 8</td>
+                      <td>row 2, cell 9</td>
+                      <td>row 2, cell 10</td>
+                      <td>row 2, cell 11</td>
+                      <td>row 2, cell 12</td>
+
+                    </tr>
+                    <tr>
+                      <td>row 3, cell 1</td>
+                      <td>row 3, cell 2</td>
+                      <td>row 3, cell 3</td>
+                      <td>row 3, cell 4</td>
+                      <td>row 3, cell 5</td>
+                      <td>row 3, cell 6</td>
+                      <td>row 3, cell 7</td>
+                      <td>row 3, cell 8</td>
+                      <td>row 3, cell 9</td>
+                      <td>row 3, cell 10</td>
+                      <td>row 3, cell 11</td>
+                      <td>row 3, cell 12</td>
+
+                    </tr>
+                    <tr>
+                      <td>row 4, cell 1</td>
+                      <td>row 4, cell 2</td>
+                      <td>row 4, cell 3</td>
+                      <td>row 4, cell 4</td>
+                      <td>row 4, cell 5</td>
+                      <td>row 4, cell 6</td>
+                      <td>row 4, cell 7</td>
+                      <td>row 4, cell 8</td>
+                      <td>row 4, cell 9</td>
+                      <td>row 4, cell 10</td>
+                      <td>row 4, cell 11</td>
+                      <td>row 4, cell 12</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+
+            
+
+          </div>  -->
+
+        </div>  
+
+</body>
+        </html>

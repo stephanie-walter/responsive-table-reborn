@@ -1,0 +1,94 @@
+table th {
+    font-weight: bold;
+}
+table td,
+table th {
+    padding: 9px 10px;
+    text-align: left;
+}
+table.responsive {
+    margin-bottom: 0;
+    overflow: auto;
+}
+.table-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+table.responsive {
+    margin-bottom: 0;
+}
+.pinned {
+    float: left;
+    width: 35%;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    overflow-x: scroll;
+    background: #fff;
+}
+.scrollable {
+    position: relative;
+    border-right: 1px solid #ccc;
+}
+.table-wrapper:before {
+    content: ' ';
+    z-index: 2;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 2px;
+    width: 20px;
+    height: auto;
+    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(229,229,229,1) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(255,255,255,0) ),color-stop(100%,rgba(229,229,229,1) ));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(229,229,229,1) 100%);
+    background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(229,229,229,1) 100%);
+    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0,rgba(229,229,229,1) 100%);
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(229,229,229,1) 100%);
+}
+.table-wrapper:after {
+    content: " ";
+    display: block;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    width: 35px;
+    height: 25px;
+    background: url('swipe.png') no-repeat top right;
+}
+table.responsive td,
+table.responsive th {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pinned table {
+    width: 100%;
+    margin-bottom: 0;
+    border-right: none;
+    border-left: none;
+}
+.pinned table th,
+.pinned table td {
+    white-space: nowrap;
+}
+.pinned td:last-child {
+    border-bottom: 0;
+}
+div.table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+div.table-wrapper div.scrollable table {
+}
+div.table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+table.responsive th:first-child,
+table.responsive td:first-child,
+table.responsive td:first-child,
+table.responsive.pinned td {
+    display: none;
+}
